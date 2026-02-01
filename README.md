@@ -137,6 +137,18 @@ npm run test:universal     # Same as above
 npm run test:steg          # Test steganography options
 ```
 
+### **Deployment**
+
+#### **GitHub Pages (Automatic)**
+This repository includes a GitHub Action workflow that automatically builds and deploys the project to GitHub Pages whenever changes are pushed to the `main` or `master` branch.
+
+#### **Manual Deployment**
+To deploy manually to GitHub Pages from your local environment:
+```bash
+# Build and deploy to gh-pages branch
+npm run deploy
+```
+
 
 ## 🛠️ **Technical Details**
 

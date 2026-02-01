@@ -14,13 +14,22 @@
     "test:universal": "node tests/test_universal.js",
     "test:steg": "node tests/test_steganography_options.js",
     "test:all": "npm run test:universal && npm run test:steg",
+    "deploy": "npm run build && gh-pages -d dist",
     "precommit": "npm run test:all"
   },
   "repository": {
     "type": "git",
     "url": "."
   },
-  "keywords": ["encoder", "decoder", "steganography", "cipher"],
+  "keywords": [
+    "encoder",
+    "decoder",
+    "steganography",
+    "cipher"
+  ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
